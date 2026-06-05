@@ -1,17 +1,17 @@
-# Overview
+# 개요
 
-This page is the top-level synthesis of the wiki.
+이 페이지는 위키의 최상위 종합이다.
 
-Update it when the accumulated sources change the overall understanding of the domain.
+축적된 원천 자료가 도메인에 대한 전체 이해를 바꿀 때 업데이트한다.
 
-## Current Summary
+## 현재 요약
 
-No sources have been ingested yet.
+아직 수집된 원천 자료가 없다.
 
-## Main Themes
+## 주요 주제
 
-- To be added.
+- 추가 예정.
 
-## Open Questions
+## 열린 질문
 
-- To be added.
+- 추가 예정.

@@ -1,17 +1,17 @@
-# Question
+# 질문
 
-## Answer
+## 답변
 
-Durable answer synthesized from the wiki.
+위키에서 종합한 오래 보존할 답변.
 
-## Sources Consulted
+## 참고한 원천 자료
 
 - [[source-page]]
 
-## Reasoning
+## 추론
 
-Short explanation of how the answer follows from the sources.
+답변이 원천 자료에서 어떻게 도출되는지에 대한 짧은 설명.
 
-## Follow-up Questions
+## 후속 질문
 
-- To be added.
+- 추가 예정.

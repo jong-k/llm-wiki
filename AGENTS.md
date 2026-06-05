@@ -1,72 +1,72 @@
-# LLM Wiki Agent Instructions
+# LLM Wiki 에이전트 지침
 
-This repository is a reusable LLM Wiki template. Follow these rules when maintaining a wiki created from this template.
+이 저장소는 재사용 가능한 LLM Wiki 템플릿이다. 이 템플릿으로 만든 위키를 유지할 때는 다음 규칙을 따른다.
 
-## Core Model
+## 핵심 모델
 
-- `raw/` is the immutable source layer. Read files there, but do not edit, rename, summarize in place, or delete them.
-- `wiki/` is the maintained knowledge layer. Create and update markdown pages there.
-- `AGENTS.md` is the operating schema. Update it only when the wiki workflow itself changes.
-- Prefer Obsidian-compatible wiki links like `[[page-name]]` for internal wiki references.
-- Use kebab-case filenames, for example `llm-wiki-pattern.md` or `andre-karpathy.md`.
+- `raw/`는 불변 원천 자료 레이어다. 이곳의 파일은 읽되, 수정, 이름 변경, 제자리 요약, 삭제를 하지 않는다.
+- `wiki/`는 유지 관리되는 지식 레이어다. 이곳에 마크다운 페이지를 만들고 업데이트한다.
+- `AGENTS.md`는 운영 스키마다. 위키 워크플로 자체가 바뀔 때만 업데이트한다.
+- 위키 내부 참조에는 `[[page-name]]` 같은 Obsidian 호환 위키 링크를 우선 사용한다.
+- 파일명은 kebab-case를 사용한다. 예: `llm-wiki-pattern.md`, `andre-karpathy.md`.
 
-## Directory Roles
+## 디렉터리 역할
 
-- `raw/sources/`: user-provided source documents.
-- `raw/assets/`: local images, PDFs, screenshots, and attachments referenced by sources.
-- `wiki/index.md`: content-oriented catalog of wiki pages.
-- `wiki/log.md`: chronological append-only activity log.
-- `wiki/overview.md`: high-level synthesis of the current wiki.
-- `wiki/sources/`: one page per source document.
-- `wiki/entities/`: people, organizations, products, places, and other named entities.
-- `wiki/concepts/`: ideas, theories, terms, patterns, and frameworks.
-- `wiki/syntheses/`: cross-source analyses, comparisons, and evolving theses.
-- `wiki/questions/`: durable answers to useful user questions.
-- `wiki/_templates/`: page templates.
-- `tools/`: optional scripts and local search tooling.
+- `raw/sources/`: 사용자가 제공한 원천 문서.
+- `raw/assets/`: 원천 자료가 참조하는 로컬 이미지, PDF, 스크린샷, 첨부파일.
+- `wiki/index.md`: 위키 페이지의 콘텐츠 중심 카탈로그.
+- `wiki/log.md`: 시간순 추가 전용 활동 로그.
+- `wiki/overview.md`: 현재 위키의 상위 수준 종합.
+- `wiki/sources/`: 원천 문서별 페이지.
+- `wiki/entities/`: 사람, 조직, 제품, 장소, 기타 명명된 대상.
+- `wiki/concepts/`: 아이디어, 이론, 용어, 패턴, 프레임워크.
+- `wiki/syntheses/`: 여러 원천 자료를 아우르는 분석, 비교, 발전 중인 논지.
+- `wiki/questions/`: 유용한 사용자 질문에 대한 오래 보존할 답변.
+- `wiki/_templates/`: 페이지 템플릿.
+- `tools/`: 선택적 스크립트와 로컬 검색 도구.
 
-## Workflow: ingest
+## 워크플로: ingest
 
-Use this workflow when the user adds a source to `raw/sources/` and asks you to process it.
+사용자가 `raw/sources/`에 원천 자료를 추가하고 처리를 요청하면 이 워크플로를 사용한다.
 
-1. Read the source and identify key claims, entities, concepts, dates, and evidence.
-2. Create or update a matching page in `wiki/sources/` using `wiki/_templates/source.md`.
-3. Update related pages in `wiki/entities/`, `wiki/concepts/`, and `wiki/syntheses/`.
-4. Add or refresh links in `wiki/index.md`.
-5. Append an entry to `wiki/log.md` with the format `## [YYYY-MM-DD] ingest | Title`.
-6. Mention contradictions, uncertainty, and open questions instead of smoothing them over.
+1. 원천 자료를 읽고 핵심 주장, 엔티티, 개념, 날짜, 근거를 식별한다.
+2. `wiki/_templates/source.md`를 사용해 `wiki/sources/`에 대응하는 페이지를 만들거나 업데이트한다.
+3. `wiki/entities/`, `wiki/concepts/`, `wiki/syntheses/`의 관련 페이지를 업데이트한다.
+4. `wiki/index.md`의 링크를 추가하거나 갱신한다.
+5. `wiki/log.md`에 `## [YYYY-MM-DD] ingest | 제목` 형식으로 항목을 추가한다.
+6. 모순, 불확실성, 열린 질문을 매끄럽게 덮지 말고 명시한다.
 
-## Workflow: query
+## 워크플로: query
 
-Use this workflow when answering questions against the wiki.
+위키를 대상으로 한 질문에 답할 때 이 워크플로를 사용한다.
 
-1. Read `wiki/index.md` first.
-2. Open the most relevant wiki pages and synthesize an answer from them.
-3. Cite source pages or wiki pages with links.
-4. If the answer is durable, create or update a page in `wiki/questions/` or `wiki/syntheses/`.
-5. Append an entry to `wiki/log.md` with the format `## [YYYY-MM-DD] query | Question`.
+1. 먼저 `wiki/index.md`를 읽는다.
+2. 가장 관련 있는 위키 페이지를 열고 답변을 종합한다.
+3. 원천 자료 페이지나 위키 페이지를 링크로 인용한다.
+4. 답변을 오래 보존할 가치가 있다면 `wiki/questions/` 또는 `wiki/syntheses/`에 페이지를 만들거나 업데이트한다.
+5. `wiki/log.md`에 `## [YYYY-MM-DD] query | 질문` 형식으로 항목을 추가한다.
 
-## Workflow: lint
+## 워크플로: lint
 
-Use this workflow when asked to health-check the wiki.
+위키 상태 점검을 요청받으면 이 워크플로를 사용한다.
 
-- Find contradictions between pages.
-- Find stale claims superseded by newer sources.
-- Find orphan pages with no inbound links.
-- Find important mentioned concepts that lack pages.
-- Find missing cross-references.
-- Find data gaps that need more sources.
-- Record material maintenance work in `wiki/log.md` with the format `## [YYYY-MM-DD] lint | Scope`.
+- 페이지 간 모순을 찾는다.
+- 더 새로운 원천 자료가 대체한 오래된 주장을 찾는다.
+- 들어오는 링크가 없는 고아 페이지를 찾는다.
+- 언급되었지만 별도 페이지가 없는 중요한 개념을 찾는다.
+- 누락된 교차 참조를 찾는다.
+- 추가 원천 자료가 필요한 데이터 공백을 찾는다.
+- 의미 있는 유지 관리 작업은 `wiki/log.md`에 `## [YYYY-MM-DD] lint | 범위` 형식으로 기록한다.
 
-## Writing Standards
+## 작성 기준
 
-- Keep pages concise, structured, and easy to scan.
-- Preserve source provenance. Do not present source-specific facts without a source reference.
-- Separate facts, interpretation, uncertainty, and open questions.
-- Prefer updating existing pages over creating duplicates.
-- Do not invent sources or citations.
-- Do not modify files under `raw/` unless the user explicitly asks.
+- 페이지는 간결하고 구조화되어 있으며 훑어보기 쉬워야 한다.
+- 원천 출처를 보존한다. 원천 자료에 의존한 사실은 출처 참조 없이 제시하지 않는다.
+- 사실, 해석, 불확실성, 열린 질문을 구분한다.
+- 중복 페이지를 만들기보다 기존 페이지 업데이트를 우선한다.
+- 원천 자료나 인용을 지어내지 않는다.
+- 사용자가 명시적으로 요청하지 않는 한 `raw/` 아래 파일을 수정하지 않는다.
 
-## Commit Standards
+## 커밋 기준
 
-- When creating commits, follow `docs/commit-convention.md`.
+- 커밋을 만들 때는 `docs/commit-convention.md`를 따른다.

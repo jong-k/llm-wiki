@@ -1,38 +1,38 @@
-# Source Title
+# 원천 자료 제목
 
-## Metadata
+## 메타데이터
 
-- Source file: `raw/sources/...`
-- Source type:
-- Date added:
-- Original date:
-- Author:
+- 원천 파일: `raw/sources/...`
+- 원천 유형:
+- 추가 날짜:
+- 원본 날짜:
+- 작성자:
 - URL:
 
-## Summary
+## 요약
 
-Brief summary of the source.
+원천 자료에 대한 짧은 요약.
 
-## Key Claims
+## 핵심 주장
 
-- Claim with supporting detail.
+- 근거 세부사항이 포함된 주장.
 
-## Entities
+## 엔티티
 
 - [[entity-name]]
 
-## Concepts
+## 개념
 
 - [[concept-name]]
 
-## Evidence and Notes
+## 근거와 메모
 
-- Important evidence, excerpts, observations, or data points.
+- 중요한 근거, 발췌, 관찰, 데이터 포인트.
 
-## Contradictions or Tensions
+## 모순 또는 긴장
 
-- Claims that conflict with existing wiki pages or prior sources.
+- 기존 위키 페이지나 이전 원천 자료와 충돌하는 주장.
 
-## Open Questions
+## 열린 질문
 
-- Questions raised by this source.
+- 이 원천 자료가 제기하는 질문.

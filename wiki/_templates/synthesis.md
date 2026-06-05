@@ -1,22 +1,22 @@
-# Synthesis Title
+# 종합 제목
 
-## Thesis
+## 논지
 
-Current best synthesis across sources.
+여러 원천 자료를 아우르는 현재 최선의 종합.
 
-## Supporting Evidence
+## 뒷받침하는 근거
 
-- Evidence with links to source pages.
+- 원천 자료 페이지 링크가 포함된 근거.
 
-## Counterpoints and Tensions
+## 반론과 긴장
 
-- Conflicting evidence, uncertainty, or unresolved tension.
+- 충돌하는 근거, 불확실성, 해결되지 않은 긴장.
 
-## Related Pages
+## 관련 페이지
 
 - [[source-page]]
 - [[concept-page]]
 
-## Next Questions
+## 다음 질문
 
-- To be added.
+- 추가 예정.

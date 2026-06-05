@@ -1,27 +1,27 @@
-# Index
+# 인덱스
 
-Content-oriented catalog for this LLM Wiki. Update this file whenever pages are added or materially changed.
+이 LLM Wiki의 콘텐츠 중심 카탈로그다. 페이지가 추가되거나 의미 있게 변경될 때마다 이 파일을 업데이트한다.
 
-## Overview
+## 개요
 
-- [[overview]] - High-level synthesis of the wiki's current state.
+- [[overview]] - 위키의 현재 상태에 대한 상위 수준 종합.
 
-## Sources
+## 원천 자료
 
-Add one entry per source summary in `wiki/sources/`.
+`wiki/sources/`에 있는 원천 자료 요약마다 항목을 하나씩 추가한다.
 
-## Entities
+## 엔티티
 
-Add people, organizations, products, places, and other named entities from `wiki/entities/`.
+`wiki/entities/`에 있는 사람, 조직, 제품, 장소, 기타 명명된 대상을 추가한다.
 
-## Concepts
+## 개념
 
-Add ideas, theories, terms, patterns, and frameworks from `wiki/concepts/`.
+`wiki/concepts/`에 있는 아이디어, 이론, 용어, 패턴, 프레임워크를 추가한다.
 
-## Syntheses
+## 종합
 
-Add cross-source analyses, comparisons, and evolving theses from `wiki/syntheses/`.
+`wiki/syntheses/`에 있는 여러 원천 자료를 아우르는 분석, 비교, 발전 중인 논지를 추가한다.
 
-## Questions
+## 질문
 
-Add durable answers and useful explorations from `wiki/questions/`.
+`wiki/questions/`에 있는 오래 보존할 답변과 유용한 탐색을 추가한다.

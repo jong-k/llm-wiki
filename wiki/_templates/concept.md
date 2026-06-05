@@ -1,25 +1,25 @@
-# Concept Name
+# 개념 이름
 
-## Summary
+## 요약
 
-Short explanation of the concept.
+개념에 대한 짧은 설명.
 
-## Definition
+## 정의
 
-Working definition used in this wiki.
+이 위키에서 사용하는 작업 정의.
 
-## Key Points
+## 핵심 사항
 
-- Point with source link.
+- 원천 자료 링크가 포함된 핵심 사항.
 
-## Related Sources
+## 관련 원천 자료
 
 - [[source-page]]
 
-## Related Entities
+## 관련 엔티티
 
 - [[entity-name]]
 
-## Open Questions
+## 열린 질문
 
-- To be added.
+- 추가 예정.

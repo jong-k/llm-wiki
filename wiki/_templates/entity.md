@@ -1,21 +1,21 @@
-# Entity Name
+# 엔티티 이름
 
-## Summary
+## 요약
 
-Short description of the entity.
+엔티티에 대한 짧은 설명.
 
-## Known Facts
+## 알려진 사실
 
-- Fact with source link.
+- 원천 자료 링크가 포함된 사실.
 
-## Related Sources
+## 관련 원천 자료
 
 - [[source-page]]
 
-## Related Concepts
+## 관련 개념
 
 - [[concept-name]]
 
-## Open Questions
+## 열린 질문
 
-- To be added.
+- 추가 예정.
