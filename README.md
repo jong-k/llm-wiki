@@ -1,5 +1,7 @@
 # LLM Wiki
 
+> 원본: https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+
 선별한 원천 자료를 바탕으로 LLM이 유지하는 위키를 만들기 위한 재사용 가능한 템플릿.
 
 이 프로젝트는 `docs/llm-wiki/idea.en.md`와 `docs/llm-wiki/idea.ko.md`에 설명된 패턴을 따른다. 원시 자료는 불변으로 두고, LLM이 구조화된 마크다운 위키를 유지하게 하며, `AGENTS.md`를 운영 스키마로 사용한다.
