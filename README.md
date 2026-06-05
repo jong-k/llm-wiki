@@ -44,10 +44,9 @@
 ```text
 README.md
 AGENTS.md
-docs/
 raw/
 tools/
 wiki/
 ```
 
-복사한 뒤에는 대상 프로젝트에 맞게 `README.md`와 `AGENTS.md`를 먼저 수정한다. 예를 들어 Next.js 프로젝트라면 `raw/sources/`에는 기획서, API 문서, 디자인 문서, 회의록을 넣고, `wiki/concepts/`에는 라우팅, 인증, 상태 관리, 디자인 시스템 같은 개념을 정리하면 된다.
+`docs/`는 이 템플릿의 배경과 참고 자료이므로 복사 세트에는 포함하지 않는다. 복사한 뒤에는 대상 프로젝트에 맞게 `README.md`와 `AGENTS.md`를 먼저 수정한다. 예를 들어 Next.js 프로젝트라면 `raw/sources/`에는 기획서, API 문서, 디자인 문서, 회의록을 넣고, `wiki/concepts/`에는 라우팅, 인증, 상태 관리, 디자인 시스템 같은 개념을 정리하면 된다.
